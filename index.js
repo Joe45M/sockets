@@ -19,7 +19,7 @@ app.use(express.static('public'));
 var io = socket(server);
 io.on('connect', function(socket) {
     var seshid = socket.id;
-    connection.query('SELECT * from messages ORDER BY id DESC LIMIT 30', function(err, rows, fields) {
+    // connection.query('SELECT * from messages ORDER BY id DESC LIMIT 30', function(err, rows, fields) {
         // if (!err) {
         //     io.emit('reply', rows)
         //     console.log(rows[0].msg_from + '- result');
