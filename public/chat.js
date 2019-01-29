@@ -4,7 +4,7 @@ var continueToChat = document.getElementById('submit-name');
 var containerFooter = document.getElementsByClassName('container-footer');
 var containerBody = document.getElementsByClassName('container-body');
 var input = document.getElementById('msg-content');
-var socket = io.connect('http://68.183.136.181:4000');
+var socket = io.connect('68.183.136.181:4000');
 continueToChat.addEventListener('click', async function() {
     var signBox = document.getElementById('sign-up');
     var userameInput = document.getElementById('username');
