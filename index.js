@@ -24,7 +24,7 @@ io.on('connect', function(socket) {
         //     io.emit('reply', rows)
         //     console.log(rows[0].msg_from + '- result');
         // } else console.log('Error while performing Query.');
-    });
+    // });
     socket.on('message', function(data) {
         io.emit('message', data)
         // send to db
