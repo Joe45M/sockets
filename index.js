@@ -11,7 +11,7 @@ const express = require('express');
 const socket = require('socket.io');
 //app setup
 const app = express();
-var server = app.listen(4000, function() {
+var server = app.listen(5000, "0.0.0.0", function() {
     console.log('listening to p4000');
 });
 app.use(express.static('public'));
